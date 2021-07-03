@@ -15,9 +15,7 @@ class RocketLaunchDataRepository @Inject constructor(
 ) {
     fun getRocketLaunchData(): Observable<List<RocketLaunchDataModel>> = when {
         connectivity.hasNetworkAccess() -> {
-            val launchDataList = getRocketLaunchDataFromApi()
-            launchDataList.doOnNext { saveLaunchDataToLocalDb(it) }
-            launchDataList
+            getRocketLaunchDataFromApi()
         }
         else -> {
             Observable.just(rocketLaunchDataDao.getLaunchDataFromDb())

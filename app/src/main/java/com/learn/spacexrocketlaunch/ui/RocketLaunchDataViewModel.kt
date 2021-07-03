@@ -28,6 +28,7 @@ class RocketLaunchDataViewModel @Inject constructor(private val getRocketLaunchD
 
     private fun onGetLaunchDataSuccess(response: List<RocketLaunchDataModel>) =
         if (response.isNotEmpty()) {
+            getRocketLaunchDataUseCase.saveLaunchDataInLocalDb(response)
             rocketLaunchDataList.value = response
         } else {
             error.value = NO_DATA_AVAILABLE

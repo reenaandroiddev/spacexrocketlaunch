@@ -10,4 +10,8 @@ class GetRocketLaunchDataUseCase @Inject constructor(private val repository: Roc
     fun getRocketLaunchData(): Observable<List<RocketLaunchDataModel>> {
         return repository.getRocketLaunchData()
     }
+
+    fun saveLaunchDataInLocalDb(launchDataList: List<RocketLaunchDataModel>) {
+        repository.saveLaunchDataToLocalDb(launchDataList)
+    }
 }
