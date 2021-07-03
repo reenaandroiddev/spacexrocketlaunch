@@ -24,10 +24,10 @@ App Overview:
 1. Displaying welcome dialog for first time user
 2. Display list of active rockets after first launch
 3. Each rocket has 
-		Name 
-		Country
-		Engine Count
+		Name, 
+		Country,
+		Engine Count,
 		Flicker Image
 
-4. Has pull to refresh to refresh data
+4. Has pull to refresh feature to refresh data
 5. All information has been cached using room for future use 
