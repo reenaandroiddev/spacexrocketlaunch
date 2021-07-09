@@ -1,4 +1,4 @@
-package com.learn.spacexrocketlaunch.domain.entities
+package com.learn.spacexrocketlaunch.data.entities
 
 import com.google.gson.annotations.SerializedName
 

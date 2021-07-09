@@ -1,7 +1,7 @@
 package com.learn.spacexrocketlaunch.data.mapper
 
 import com.learn.spacexrocketlaunch.data.model.RocketLaunchDataModel
-import com.learn.spacexrocketlaunch.domain.entities.RocketLaunchDataResponseItem
+import com.learn.spacexrocketlaunch.data.entities.RocketLaunchDataResponseItem
 
 object RocketLaunchDataMapper :
     Mapper<List<RocketLaunchDataResponseItem>, List<RocketLaunchDataModel>> {
